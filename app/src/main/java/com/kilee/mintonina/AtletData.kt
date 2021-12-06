@@ -40,6 +40,45 @@ object AtletData {
         R.drawable.ucok
     )
 
+    private val atletKelahiran = arrayOf(
+        "29 April 1998 (usia 23 tahun), Kabupaten Konawe",
+        " 7 Maret 1995 (usia 26 tahun), Bandung",
+        "20 Oktober 1996 (usia 25 tahun), Cimahi",
+        "15 September 1997 (usia 24 tahun)",
+        "2 Agustus 1995 (usia 26 tahun), Banyuwang",
+        "9 Maret 1991 (usia 30 tahun), Jakarta",
+        "26 Oktober 1994 (usia 27 tahun), Serang",
+        "11 Agustus 1987 (usia 34 tahun), Jakarta",
+        "13 Februari 1996 (usia 25 tahun), Bantul",
+        "26 April 1993 (usia 28 tahun), Bontang"
+    )
+
+    private val atletTinggi = arrayOf(
+        "1,63 m",
+        "1,75 m (5 ft 9 in)",
+        "1,71 m",
+        "1,79 m",
+        "1,7 m",
+        "1,68 m",
+        "1,68 m",
+        "1,6 m",
+        "1,72 m",
+        "1,86 m"
+    )
+
+    private val atletBerat = arrayOf(
+        "64 kg (141 pon) (141 pon)",
+        "68 kg (150 pon) (150 pon)",
+        "64 kg (141 lb)",
+        "75 kg (165 pon) (165 pon)",
+        "55 kg (121 pon) (121 pon)",
+        "70 kg (150 pon) (150 pon)",
+        "63 kg",
+        "57 kg (126 pon)",
+        "58 kg (128 pon) (128 pon)",
+        "86 kg (189 lb)"
+    )
+
     val listData: ArrayList<Atlet>
     get(){
         val list = arrayListOf<Atlet>()
@@ -48,6 +87,9 @@ object AtletData {
             atlet.name = atletName[position]
             atlet.detail = atletDetail[position]
             atlet.photo = atletPhoto[position]
+            atlet.kelahiran = atletKelahiran[position]
+            atlet.tinggi = atletTinggi[position]
+            atlet.berat = atletBerat[position]
             list.add(atlet)
         }
         return list

@@ -41,6 +41,9 @@ class ListAtletAdapter(private val listAtlet: ArrayList<Atlet>): RecyclerView.Ad
             moveDetail.putExtra(DescActivity.EXTRA_NAME, atlet.name)
             moveDetail.putExtra(DescActivity.EXTRA_DETAIL, atlet.detail)
             moveDetail.putExtra(DescActivity.EXTRA_IMG, atlet.photo)
+            moveDetail.putExtra(DescActivity.EXTRA_KELAHIRAN, atlet.kelahiran)
+            moveDetail.putExtra(DescActivity.EXTRA_BERAT, atlet.berat)
+            moveDetail.putExtra(DescActivity.EXTRA_TINGGI, atlet.tinggi)
             holder.enpad.startActivity(moveDetail)
 
 
