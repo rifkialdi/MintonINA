@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MintonINA</string>
+    <string name="badminton">Badminton</string>
+    <string name="info">Information</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="kelahiran">Kelahiran :</string>
+    <string name="tinggi">Tinggi :</string>
+    <string name="orangtuan">Orang Tua :</string>
+    <string name="aldiansyah">Aldiansyah</string>
+    <string name="email">aldiansyah9843@gmail.com</string>
+    <string name="icon_about">icon_about</string>
+</resources>
