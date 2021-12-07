@@ -23,14 +23,12 @@ class DescActivity : AppCompatActivity() {
         setContentView(R.layout.activity_desc)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-
         val tvName: TextView = findViewById(R.id.tv_name)
         val tvDetail: TextView = findViewById(R.id.tv_detail)
         val ivPhoto: ImageView = findViewById(R.id.img_photo)
         val tvKelahiran: TextView = findViewById(R.id.tvKelahiran)
         val tvBerat: TextView = findViewById(R.id.tvBerat)
         val tvTinggi: TextView = findViewById(R.id.tvTinggi)
-
 
         val name = intent.getStringExtra(EXTRA_NAME)
         val detail = intent.getStringExtra(EXTRA_DETAIL)
@@ -39,6 +37,7 @@ class DescActivity : AppCompatActivity() {
         val tinggi = intent.getStringExtra(EXTRA_TINGGI)
         val berat = intent.getStringExtra(EXTRA_BERAT)
 
+        supportActionBar?.title = name
         tvName.text = name
         tvDetail.text = detail
         tvKelahiran.text = kelahiran
