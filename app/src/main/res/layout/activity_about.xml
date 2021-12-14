@@ -42,5 +42,27 @@
         android:layout_centerHorizontal="true"
         android:paddingTop="60dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/github"
+            android:id="@+id/idimggithub" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ictelp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/idibtelp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

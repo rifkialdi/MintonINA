@@ -1,9 +1,12 @@
 package com.kilee.mintonina
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
@@ -29,6 +32,7 @@ class DescActivity : AppCompatActivity() {
         val tvKelahiran: TextView = findViewById(R.id.tvKelahiran)
         val tvBerat: TextView = findViewById(R.id.tvBerat)
         val tvTinggi: TextView = findViewById(R.id.tvTinggi)
+        val btnShare: Button = findViewById(R.id.idbtnshare)
 
         val name = intent.getStringExtra(EXTRA_NAME)
         val detail = intent.getStringExtra(EXTRA_DETAIL)
@@ -48,5 +52,13 @@ class DescActivity : AppCompatActivity() {
             .load(photo)
             .apply(RequestOptions().override(370,370))
             .into(ivPhoto)
+
+        btnShare.setOnClickListener{
+            val intent = Intent()
+            intent.action = Intent.ACTION_SEND
+            intent.putExtra(Intent.EXTRA_TEXT, "Hey checkout this GREAT APP:")
+            intent.type = "text/plain"
+            startActivity(Intent.createChooser(intent,"Share TO: "))
+        }
     }
 }
