@@ -46,7 +46,6 @@ class ListAtletAdapter(private val listAtlet: ArrayList<Atlet>): RecyclerView.Ad
             moveDetail.putExtra(DescActivity.EXTRA_TINGGI, atlet.tinggi)
             holder.enpad.startActivity(moveDetail)
 
-
             Toast.makeText(holder.itemView.context, "You choose " + listAtlet[position].name , Toast.LENGTH_SHORT).show()
         }
 
