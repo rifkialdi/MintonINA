@@ -6,6 +6,8 @@ aplikasi macam2 nama atlet badminton indonesia
 - supportactionbar
 - splash screen
 - toast
+- share
+- link 
 
 <img src="https://user-images.githubusercontent.com/47045293/145054977-24aab7f8-ec3d-4b41-892e-69c0a0aa4088.jpeg" align="left" width="220" height="500">
 <img src="https://user-images.githubusercontent.com/47045293/144864884-6a880e7c-eb8b-4231-9c03-27a76e9c5197.jpeg" align="left" width="220" height="500">
